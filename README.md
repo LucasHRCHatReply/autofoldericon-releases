@@ -27,6 +27,10 @@ Le script télécharge la dernière version, vérifie l'empreinte SHA-256 du zip
 (équipe Apple `JT9FY7PP7K`, `codesign --verify --deep --strict`), copie `AutoFolderIcon.app` dans `~/Applications`, puis
 ouvre l'app. Il garde les règles et les réglages.
 
+Variante en glisser-déposer : télécharger `AutoFolderIcon.dmg` dans les [Releases](../../releases/latest), l'ouvrir et
+glisser l'app dans Applications (empreinte : `AutoFolderIcon.dmg.sha256`). Au premier lancement, macOS peut demander une
+confirmation, l'app n'étant pas notarisée.
+
 ## Avertissement : app non validée par Apple
 
 AutoFolderIcon est signée mais pas « notarisée » : cela demande un compte développeur payant. macOS la juge donc non
